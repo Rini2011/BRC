@@ -29,7 +29,6 @@ function renderHTML(data) {
     for (i = 1; i < data.length; i++) {
         htmlString = data[i][1];
 
-
         if (htmlString === x) {
             definition[numberofdefinition] = "<p>" + data[i][2] + "<p>" + data[i][3] + "<p>" + data[i][4];
             numberofdefinition += 1; /* counts up if a another is found */
@@ -38,12 +37,11 @@ function renderHTML(data) {
   }
         var text = ""; 
         for (i = 0; i < definition.length; i++) {
-            text += (i+1) + "." + <b>"Definition"<b> + definition[i];
+            text += (i+1) + "." + "Definition" + definition[i];
         } /* Search for equal Definition" */
 
     document.getElementById("showdata").innerHTML = text; /* Print the different definition */
-    //console.log(text);
-
+    
     if (didyoufindit != "yes") {
         document.getElementById("showdata").innerHTML = ("Create a new one"); /* Create a new one as a text */
     }
