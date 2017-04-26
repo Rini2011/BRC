@@ -38,7 +38,7 @@ function renderHTML(data) {
   }
         var text = ""; 
         for (i = 0; i < definition.length; i++) {
-            text += (i+1) + "." + "Definition" + definition[i];
+            text += (i+1) + "." + "Definition.big()" + definition[i];
         } /* Search for equal Definition" */
 
     document.getElementById("showdata").innerHTML = text; /* Print the different definition */
@@ -47,4 +47,4 @@ function renderHTML(data) {
     if (didyoufindit != "yes") {
         document.getElementById("showdata").innerHTML = ("Create a new one"); /* Create a new one as a text */
     }
-}
+} /* If there is no Acronym, the text "Create a new one" will displayed therefore didyoufindit != "yes"  */
