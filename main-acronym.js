@@ -37,7 +37,7 @@ function renderHTML(data) {
   }
         var text = ""; 
         for (i = 0; i < definition.length; i++) {
-            text += (i+1) + "." + "Definition" + definition[i];
+            text += (i+1) + "." + <b>"Definition"<b> + definition[i];
         } /* Search for equal Definition" */
 
     document.getElementById("showdata").innerHTML = text; /* Print the different definition */
