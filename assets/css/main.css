@@ -1311,7 +1311,7 @@
 
 		#header nav.use-middle:after {
 			content: '';
-			display: block;
+			border-bottom: solid 1px #ffffff;
 			position: absolute;
 			top: 0;
 			left: calc(50% - 1px);
