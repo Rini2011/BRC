@@ -1269,9 +1269,9 @@
 			}
 
 		#header nav ul {
-			display: -moz-flex;
 			display:;
-			display: -ms-flex;
+			display:;
+			display:;
 			display:;
 			margin-bottom: 0;
 			list-style: none;
